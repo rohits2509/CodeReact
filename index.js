@@ -29,7 +29,7 @@ function Selection(props){
     return (
       <form className='form-horizontal'>
         <div className='form-group row'>
-          <label className='control-label col-md-2'>Domain name</label>
+          <label className='control-label col-md-2 '>Domain name</label>
           <div className='col-md-10'>
             <input className='form-control' type="text" value={data.domain}/>
           </div>
@@ -43,7 +43,7 @@ function Selection(props){
         <div className='form-group'>
           <label className='control-label col-sm-2'>Price</label>
           <div className='col-sm-10'>
-            <input className='form-control' type="text" value={ data.price }/>
+            <input className='form-control' type="text" value={ (data.price/100).toFixed(2) }/>
           </div>
         </div>
 		    <button className='btn btn-success col-sm-offset-2' onClick={props.handleClick}>Save Changes</button>
@@ -105,6 +105,5 @@ class App extends React.Component {
   }
 }
 
-//ReactDOM.render(<JsonTable rows={ items } columns={columns} className="table table-striped"/>,document.getElementById('app'));
-//ReactDOM.render(<Selection user={ items[] } />,document.getElementById('app'));
+
 ReactDOM.render(<App />,document.getElementById('app'));
