@@ -19,10 +19,9 @@ For the List view I have used React JSON-table module. The link for the module c
 
 In this project , we have also used Font-awesome and Bootstrap for styling.
 
-The project is run locally on localhost:8080 which gives  list view as shown below:
+The project is run locally on localhost:8080 which gives  list view as shown in the document.txt file:
 
-
-On clicking any of the domain names the page is redirected to the detailed view.
+On clicking any of the domain names the page is redirected to the detailed view(shown in document.txt).
 
 
 
